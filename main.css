@@ -24,6 +24,6 @@ div {
 
 @media (max-width: 500px) {
     div {
-        height: 100px;
+        height: 10px;
     }
 }
