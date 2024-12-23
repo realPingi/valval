@@ -18,7 +18,10 @@
             const textPath = "texts/" + random + ".html";
 
             const div = document.createElement('div');
+            div.className = "container";
+            const imageDiv = document.createElement('div');
             const image = document.createElement('img');
+            const iframeDiv = document.createElement('div');
             const iframe = document.createElement('iframe');
 
             image.src = imagePath;
@@ -26,9 +29,11 @@
             iframe.src = textPath;
             iframe.frameBorder = "0";
 
-            document.body.appendChild(div)
-            div.appendChild(image);
-            div.appendChild(iframe);
+            imageDiv.appendChild(image);
+            iframeDiv.appendChild(iframe);
+            div.appendChild(imageDiv);
+            div.appendChild(iframeDiv);
+            document.body.appendChild(div);
         }
     </script>
 </html>
