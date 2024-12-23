@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <title>Valval is happy!</title>
+        <link rel="icon" href="images/evoli.jpeg">
         <link rel="stylesheet" href="main.css" type="text/css">
     </head> 
     <body>
-        <h1>Hello!</h1>
-        <div style="text-align: center;">
-            <img src="images/1.jpeg">
+        <div>
+            <img src="" id="image" alt="cute chibi">
+            <iframe src="" id="text" frameborder="0"></iframe>
+            <script>
+                const imageNumber = Math.floor(Math.random() * 7) + 1;
+                const imagePath = "images/" + imageNumber + ".jpeg";
+                image.src = imagePath;
+                const textNumber = Math.floor(Math.random() * 3) + 1;
+                const textPath = "texts/" + textNumber + ".html";
+                text.src = textPath;
+            </script>
         </div>
     </body> 
 </html>
